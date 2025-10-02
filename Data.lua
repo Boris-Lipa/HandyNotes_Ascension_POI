@@ -1,5 +1,5 @@
 -- Auto-generated POI data for HandyNotes_Ascension_POI
--- Generated on: 2025-10-02T23:27:58.157Z
+-- Generated on: 2025-10-02T23:48:05.968Z
 
 AscensionPOI_Data = {
     ["DunMorogh"] = { -- Dun Morogh
@@ -406,7 +406,7 @@ AscensionPOI_Data = {
         [44006010] = { itemId = 0, name = "Old Theramore Barrel" },
         [55706260] = { itemId = 0, name = "Worldforged Cache" },
     },
-    ["Azshara"] = { -- Azshara
+    ["Aszhara"] = { -- Azshara
         [20606210] = { itemId = 0, name = "Fallen Glaive" },
         [14607830] = { itemId = 0, name = "Drape of the Lost" },
         [25506620] = { itemId = 0, name = "Buried Statue" },
@@ -686,7 +686,7 @@ AscensionPOI_Data = {
         [37303670] = { itemId = 0, name = "Mysterious Cache" },
         [25000800] = { itemId = 0, name = "Mysterious Cache" },
     },
-    ["AlteracMountains"] = { -- Alterac Mountains
+    ["Alterac"] = { -- Alterac Mountains
         [18907140] = { itemId = 0, name = "Mysterious Box" },
         [60204400] = { itemId = 0, name = "Lab Kit" },
         [22003760] = { itemId = 0, name = "Stolen Rot Hide Circlet" },
@@ -1364,7 +1364,7 @@ AscensionPOI_Data = {
         [62108110] = { itemId = 0, name = "Cord of Reverence" },
         [33404480] = { itemId = 0, name = "Dusty Locker" },
     },
-    ["Hillsbrad"] = { -- Hillsbrad Foothills
+    ["Hilsbrad"] = { -- Hillsbrad Foothills
         [78803850] = { itemId = 0, name = "Mysterious Cache" },
         [27807280] = { itemId = 0, name = "Tome of the Cabal" },
         [27202320] = { itemId = 0, name = "Bound Remains" },
@@ -1778,7 +1778,7 @@ AscensionPOI_Data = {
         [50308480] = { itemId = 0, name = "Buried Artifact" },
         [74604940] = { itemId = 0, name = "Unstable Manastorm Portal" },
     },
-    ["UnGoroCreater"] = { -- Un'Goro Crater
+    ["UngoroCrater"] = { -- Un'Goro Crater
         [48200290] = { itemId = 0, name = "Mysterious Orb" },
         [48200290] = { itemId = 0, name = "Mysterious Orb" },
         [20505760] = { itemId = 0, name = "Table RPG PROP" },
