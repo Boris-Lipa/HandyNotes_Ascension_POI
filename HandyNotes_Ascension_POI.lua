@@ -23,7 +23,7 @@ local WorldMapTooltip = WorldMapTooltip
 
 ---------------------------------------------------------
 -- Constants
-local iconTexture = "Interface\\Icons\\INV_Box_01"
+local defaultIconTexture = "Interface\\Icons\\INV_Box_01"
 
 ---------------------------------------------------------
 -- Plugin Handlers to HandyNotes
@@ -38,6 +38,18 @@ do
         if not t then return end
         local state, value = next(t, prestate)
         if state then -- Have we reached the end of this zone?
+            -- Get the POI data to determine the icon
+            local poiEntry = t[state]
+            local iconTexture = defaultIconTexture
+            
+            -- If we have a valid itemId, try to get the item icon
+            if poiEntry and poiEntry.itemId and poiEntry.itemId ~= 0 then
+                local itemIcon = GetItemIcon(poiEntry.itemId)
+                if itemIcon then
+                    iconTexture = itemIcon
+                end
+            end
+            
             -- Return the coordinate, mapFile, icon, scale, alpha
             return state, nil, iconTexture, db.icon_scale, db.icon_alpha
         end
