@@ -22,7 +22,7 @@ local WorldMapTooltip = WorldMapTooltip
 
 ---------------------------------------------------------
 -- Constants
-local iconTexture = "Interface\\Icons\\INV_Misc_QuestionMark"
+local iconTexture = "Interface\\Icons\\INV_Box_01"
 
 ---------------------------------------------------------
 -- Plugin Handlers to HandyNotes

@@ -2,6 +2,8 @@
 
 A HandyNotes plugin for World of Warcraft 3.3.5 (WotLK) that displays points of interest on the map for Ascension WoW.
 
+This is meant to work for Bronzebeard!
+
 ## Features
 
 - Shows ME's and lootable Worldforged items on the map
