@@ -1,0 +1,11 @@
+## Interface: 30300
+## Title: HandyNotes: Ascension POI
+## Notes: Shows points of interest on the map for Ascension WoW
+## Author: YourName
+## Version: 1.0.0
+## RequiredDeps: HandyNotes
+## DefaultState: enabled
+## SavedVariables: HandyNotesAscensionPOIDB
+
+HandyNotes_Ascension_POI.lua
+Data.lua
