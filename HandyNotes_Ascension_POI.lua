@@ -69,15 +69,46 @@ function APOIHandler:OnEnter(mapFile, coord)
         tooltip:SetOwner(self, self:GetCenter() > UIParent:GetCenter() and "ANCHOR_LEFT" or "ANCHOR_RIGHT")
     end
     
-    -- Get POI data for this coordinate
-    local poiData = AscensionPOI_Data[mapFile] and AscensionPOI_Data[mapFile][coord]
-    if poiData then
-        tooltip:SetText(poiData)
+    -- Get POI data for this coordinate and show it first
+    local poiEntry = AscensionPOI_Data[mapFile] and AscensionPOI_Data[mapFile][coord]
+    if poiEntry then
+        local poiName = poiEntry.name or poiEntry -- Handle both old string format and new object format
+        local itemId = poiEntry.itemId or 1484 -- Default to 1484 if not specified
         
+        -- Add POI information with coordinates on same line
         if db.show_coords then
             local x, y = HandyNotes:getXY(coord)
-            tooltip:AddLine("Coordinates: " .. string.format("%.1f, %.1f", x*100, y*100), 1, 1, 1)
+            local coordText = string.format(" (%.1f, %.1f)", x*100, y*100)
+            tooltip:SetText(poiName .. coordText, 0.6, 0.8, 1.0) -- POI name with coordinates
+        else
+            tooltip:SetText(poiName, 0.6, 0.8, 1.0) -- Just POI name
         end
+        
+        -- Only show item tooltip if itemId is not 0
+        if itemId and itemId ~= 0 then
+            -- Add separator line before item info
+            tooltip:AddLine(" ")
+            
+            -- Use the itemId from the data entry
+            local tempTooltip = CreateFrame("GameTooltip", "TempItemTooltip", UIParent, "GameTooltipTemplate")
+            tempTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+            tempTooltip:SetHyperlink("item:" .. itemId)
+            
+            -- Copy the item tooltip lines to our main tooltip
+            for i = 1, tempTooltip:NumLines() do
+                local line = _G["TempItemTooltipTextLeft" .. i]
+                if line and line:GetText() then
+                    local r, g, b, a = line:GetTextColor()
+                    tooltip:AddLine(line:GetText(), r, g, b)
+                end
+            end
+            
+            tempTooltip:Hide()
+        end
+    else
+        -- Fallback if no POI data
+        tooltip:SetText("Ascension POI", 0.6, 0.8, 1.0)
+        tooltip:AddLine("Unknown location", 0.8, 0.8, 0.8)
     end
     
     tooltip:Show()
