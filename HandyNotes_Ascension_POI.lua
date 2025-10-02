@@ -11,6 +11,7 @@ local defaults = {
         icon_scale = 1.0,
         icon_alpha = 1.0,
         show_coords = true,
+        show_on_minimap = true,
     }
 }
 
@@ -43,7 +44,16 @@ do
     end
 
     function APOIHandler:GetNodes(mapFile, minimap)
-        return iter, AscensionPOI_Data[mapFile], nil
+        if minimap then 
+            -- Return only the requested zone's data for the minimap
+            if not db.show_on_minimap then 
+                return next, emptyTbl, nil 
+            end
+            return iter, AscensionPOI_Data[mapFile] or emptyTbl, nil
+        else
+            -- For world map, return the zone data if it exists
+            return iter, AscensionPOI_Data[mapFile] or emptyTbl, nil
+        end
     end
 end
 
@@ -127,6 +137,13 @@ local options = {
                     desc = "Show coordinates in the tooltip",
                     arg = "show_coords",
                     order = 30,
+                },
+                show_on_minimap = {
+                    type = "toggle",
+                    name = "Show on Minimap",
+                    desc = "Show POI icons on the minimap",
+                    arg = "show_on_minimap",
+                    order = 40,
                 },
             },
         },
