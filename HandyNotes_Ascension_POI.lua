@@ -14,6 +14,9 @@ local defaults = {
         show_on_minimap = true,
         item_level_scaling = true,
         max_item_level = 60,
+        show_unknown_items = true,
+        show_mystic_scrolls = true,
+        show_all_other = true,
     }
 }
 
@@ -26,6 +29,7 @@ local WorldMapTooltip = WorldMapTooltip
 ---------------------------------------------------------
 -- Constants
 local defaultIconTexture = "Interface\\Icons\\INV_Box_01"
+local scrollIconTexture = "Interface\\Icons\\INV_Scroll_03"
 
 ---------------------------------------------------------
 -- Plugin Handlers to HandyNotes
@@ -39,21 +43,42 @@ do
     local function iter(t, prestate)
         if not t then return end
         local state, value = next(t, prestate)
-        if state then -- Have we reached the end of this zone?
-            -- Get the POI data to determine the icon
+        while state do -- Continue until we find a valid entry or reach the end
+            -- Get the POI data to determine filtering
             local poiEntry = t[state]
+            local shouldShow = false
             local iconTexture = defaultIconTexture
             
-            -- If we have a valid itemId, try to get the item icon
-            if poiEntry and poiEntry.itemId and poiEntry.itemId ~= 0 then
-                local itemIcon = GetItemIcon(poiEntry.itemId)
-                if itemIcon then
-                    iconTexture = itemIcon
+            if poiEntry then
+                local poiName = poiEntry.name or poiEntry
+                local itemId = poiEntry.itemId or 0
+                
+                -- Check if this is a mystic scroll
+                if poiName and string.find(poiName, "Mystic Scroll") then
+                    shouldShow = db.show_mystic_scrolls
+                    iconTexture = scrollIconTexture
+                -- Check if this is an unknown item (itemId 0)
+                elseif itemId == 0 then
+                    shouldShow = db.show_unknown_items
+                    iconTexture = defaultIconTexture
+                -- Check if this is a regular item (itemId > 0)
+                elseif itemId > 0 then
+                    shouldShow = db.show_all_other
+                    -- Try to get the item icon
+                    local itemIcon = GetItemIcon(itemId)
+                    if itemIcon then
+                        iconTexture = itemIcon
+                    end
+                end
+                
+                -- If this entry should be shown, return it
+                if shouldShow then
+                    return state, nil, iconTexture, db.icon_scale, db.icon_alpha
                 end
             end
             
-            -- Return the coordinate, mapFile, icon, scale, alpha
-            return state, nil, iconTexture, db.icon_scale, db.icon_alpha
+            -- Get next entry if current one shouldn't be shown
+            state, value = next(t, state)
         end
     end
 
@@ -217,6 +242,36 @@ local options = {
                     min = 1, max = 80, step = 1,
                     arg = "max_item_level",
                     order = 60,
+                },
+            },
+        },
+        poi_filters = {
+            type = "group",
+            name = "POI Filters",
+            desc = "Control which types of POIs are shown",
+            order = 30,
+            inline = true,
+            args = {
+                show_unknown_items = {
+                    type = "toggle",
+                    name = "Show Unknown Items",
+                    desc = "Show POIs with unknown items no Tooltip",
+                    arg = "show_unknown_items",
+                    order = 10,
+                },
+                show_mystic_scrolls = {
+                    type = "toggle",
+                    name = "Show Mystic Scrolls",
+                    desc = "Show Mystic Scroll POIs",
+                    arg = "show_mystic_scrolls",
+                    order = 20,
+                },
+                show_all_other = {
+                    type = "toggle",
+                    name = "Show Found Items",
+                    desc = "Show POIs with Items that have a Tooltip",
+                    arg = "show_all_other",
+                    order = 30,
                 },
             },
         },

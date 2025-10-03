@@ -1,5 +1,5 @@
 -- Auto-generated POI data for HandyNotes_Ascension_POI
--- Generated on: 2025-10-03T02:00:50.721Z
+-- Generated on: 2025-10-03T02:13:03.782Z
 
 AscensionPOI_Data = {
     ["DunMorogh"] = { -- Dun Morogh
@@ -207,6 +207,10 @@ AscensionPOI_Data = {
         [43506730] = { itemId = 0, name = "Glimmer of Light" },
         [71904650] = { itemId = 0, name = "Book of Faith" },
         [81407170] = { itemId = 0, name = "Mysterious Cache" },
+        [81417204] = { itemId = 1013879, name = "Mystic Scroll: Discipline Mastery" },
+        [81556046] = { itemId = 200605, name = "Mystic Scroll: Accelerated Ascension" },
+        [91043084] = { itemId = 200869, name = "Mystic Scroll: Atonement" },
+        [72784902] = { itemId = 201156, name = "Mystic Scroll: Armor of Faith" },
     },
     ["Wetlands"] = { -- Wetlands
         [45002480] = { itemId = 0, name = "Forgotten Dwarven Axe" },
@@ -243,6 +247,9 @@ AscensionPOI_Data = {
         [69703360] = { itemId = 0, name = "Miner\'s Satchel" },
         [74206930] = { itemId = 1378153, name = "Crimson Dragonscale" },
         [69108380] = { itemId = 0, name = "Lost Sword of Vengeance" },
+        [33915079] = { itemId = 201100, name = "Mystic Scroll: Wanding" },
+        [61652869] = { itemId = 201533, name = "Mystic Scroll: Shadow Reserves" },
+        [09085741] = { itemId = 201592, name = "Mystic Scroll: Lightburst" },
     },
     ["Elwynn"] = { -- Elwynn Forest
         [49303580] = { itemId = 1388533, name = "Wax Stained Bag" },
@@ -355,6 +362,7 @@ AscensionPOI_Data = {
         [37904650] = { itemId = 1389206, name = "Champion\'s Band" },
         [42503910] = { itemId = 1388249, name = "Looted Shield" },
         [40703490] = { itemId = 0, name = "Scorched Equipment Cache" },
+        [39274570] = { itemId = 201525, name = "Mystic Scroll: Overflowing Light" },
     },
     ["Dustwallow"] = { -- Dustwallow Marsh
         [54005630] = { itemId = 0, name = "Mysterious Cache" },
@@ -405,6 +413,10 @@ AscensionPOI_Data = {
         [35905360] = { itemId = 0, name = "Secret Stash" },
         [44006010] = { itemId = 0, name = "Old Theramore Barrel" },
         [55706260] = { itemId = 0, name = "Worldforged Cache" },
+        [73881871] = { itemId = 200078, name = "Mystic Scroll: Void Eruption" },
+        [39523241] = { itemId = 200869, name = "Mystic Scroll: Atonement" },
+        [29724873] = { itemId = 200998, name = "Mystic Scroll: Circle of Life" },
+        [34166995] = { itemId = 201517, name = "Mystic Scroll: Power Word: Barries" },
     },
     ["Aszhara"] = { -- Azshara
         [20606210] = { itemId = 0, name = "Fallen Glaive" },
@@ -519,6 +531,11 @@ AscensionPOI_Data = {
         [37501690] = { itemId = 0, name = "Unstable Earth Magic" },
         [39802460] = { itemId = 0, name = "Honor Blade" },
         [35702670] = { itemId = 0, name = "Ancient Priest Tome" },
+        [47588387] = { itemId = 201100, name = "Mystic Scroll: Wanding" },
+        [60785415] = { itemId = 201237, name = "Mystic Scroll: Faith Rekindled" },
+        [39371504] = { itemId = 201288, name = "Mystic Scroll: Centered" },
+        [62653631] = { itemId = 201480, name = "Mystic Scroll: Pendulum" },
+        [62005569] = { itemId = 201591, name = "Mystic Scroll: Promise of Renewal" },
     },
     ["WesternPlaguelands"] = { -- Western Plaguelands
         [69107230] = { itemId = 0, name = "Mysterious Righteous Book" },
@@ -589,6 +606,12 @@ AscensionPOI_Data = {
         [41701480] = { itemId = 0, name = "Scarlet Cursed Band" },
         [55002380] = { itemId = 410023, name = "Scarlet Supplies" },
         [69406990] = { itemId = 0, name = "Scholomance Supplies" },
+        [58236542] = { itemId = 1013880, name = "Mystic Scroll: Shadow Mastery" },
+        [47235254] = { itemId = 200644, name = "Mystic Scroll: Spirited Penance" },
+        [50827564] = { itemId = 200768, name = "Mystic Scroll: Vampiric Death" },
+        [54827979] = { itemId = 200768, name = "Mystic Scroll: Vampiric Death" },
+        [39506677] = { itemId = 200861, name = "Mystic Scroll: Words of Time" },
+        [39676900] = { itemId = 201148, name = "Mystic Scroll: Refilling the Well" },
     },
     ["Stranglethorn"] = { -- Stranglethorn Vale
         [30403230] = { itemId = 0, name = "Mysterious Pirate Cache" },
@@ -685,6 +708,8 @@ AscensionPOI_Data = {
         [29904740] = { itemId = 0, name = "Mysterious Cache" },
         [37303670] = { itemId = 0, name = "Mysterious Cache" },
         [25000800] = { itemId = 0, name = "Mysterious Cache" },
+        [50701640] = { itemId = 201325, name = "Mystic Scroll: Prayers of the Pertinent" },
+        [43891130] = { itemId = 201126, name = "Mystic Scroll: Higher Power" },
     },
     ["Alterac"] = { -- Alterac Mountains
         [18907140] = { itemId = 0, name = "Mysterious Box" },
@@ -737,6 +762,8 @@ AscensionPOI_Data = {
         [80805100] = { itemId = 0, name = "Turtle Shell" },
         [46904580] = { itemId = 0, name = "Mysterious Cache" },
         [15607860] = { itemId = 0, name = "Mysterious Arcane Sigil" },
+        [63104811] = { itemId = 200592, name = "Mystic Scroll: Renewed Through Absolution" },
+        [39371504] = { itemId = 200861, name = "Mystic Scroll: Words of Time" },
     },
     ["LochModan"] = { -- Loch Modan
         [62007550] = { itemId = 1389261, name = "Abandoned Greatsword" },
@@ -775,6 +802,8 @@ AscensionPOI_Data = {
         [79105150] = { itemId = 0, name = "Bell Rope" },
         [79501450] = { itemId = 0, name = "Chok\'sul\'s Basket" },
         [45400000] = { itemId = 0, name = "Lost Sword of Vengeance" },
+        [65426632] = { itemId = 201565, name = "Mystic Scroll: Light and Shadow" },
+        [51852189] = { itemId = 201580, name = "Mystic Scroll: Psychic Infusion" },
     },
     ["Westfall"] = { -- Westfall
         [26007350] = { itemId = 0, name = "Quel\'Thalas Sunken Treasure Chest" },
@@ -827,6 +856,8 @@ AscensionPOI_Data = {
         [66603080] = { itemId = 0, name = "Riverpaw Pack Chieftain\'s Lunch" },
         [71507390] = { itemId = 1388578, name = "Madness Cursed Notes" },
         [73506520] = { itemId = 0, name = "Spider Ichor Sample" },
+        [26207160] = { itemId = 200605, name = "Mystic Scroll: Accelerated Ascension" },
+        [52475371] = { itemId = 201525, name = "Mystic Scroll: Overflowing Light" },
     },
     ["DeadwindPass"] = { -- Deadwind Pass
         [53009250] = { itemId = 0, name = "Brewing Instructions" },
@@ -864,6 +895,8 @@ AscensionPOI_Data = {
         [55207300] = { itemId = 0, name = "Wine Bottle" },
         [56408150] = { itemId = 0, name = "Cellar Rubble" },
         [64907420] = { itemId = 1388442, name = "Blood-soaked Bag" },
+        [54297837] = { itemId = 200195, name = "Mystic Scroll: Void Herald: Grasp of Darkness" },
+        [41347874] = { itemId = 200997, name = "Mystic Scroll: Divine Symmetry" },
     },
     ["Redridge"] = { -- Redridge Mountains
         [4500-140] = { itemId = 0, name = "Mysterious Cache" },
@@ -902,6 +935,9 @@ AscensionPOI_Data = {
         [20204630] = { itemId = 0, name = "Flourishing Flowers" },
         [78904950] = { itemId = 0, name = "Mysterious Power Crystal" },
         [18709220] = { itemId = 0, name = "Chocked Fish Corpse" },
+        [63004858] = { itemId = 201463, name = "Mystic Scroll: Dark Focus" },
+        [62554880] = { itemId = 201532, name = "Mystic Scroll: Revengeful Block" },
+        [22215625] = { itemId = 201591, name = "Mystic Scroll: Promise of Renewal" },
     },
     ["Arathi"] = { -- Arathi Highlands
         [51304910] = { itemId = 0, name = "Mysterious Hammer" },
@@ -957,6 +993,11 @@ AscensionPOI_Data = {
         [21508130] = { itemId = 0, name = "Windwalker Totem" },
         [59203360] = { itemId = 0, name = "Unstable Manastorm Portal" },
         [90307200] = { itemId = 1379541, name = "Desperate Defense" },
+        [43218911] = { itemId = 200072, name = "Mystic Scroll: Divine Star" },
+        [26176377] = { itemId = 200158, name = "Mystic Scroll: Wraithweaver: Echoing Shadows" },
+        [23603986] = { itemId = 200886, name = "Mystic Scroll: Zany Zealot" },
+        [65647365] = { itemId = 201463, name = "Mystic Scroll: Dark Focus" },
+        [66007859] = { itemId = 201564, name = "Mystic Scroll: Wraithweaver: Shadow Orbs" },
     },
     ["BurningSteppes"] = { -- Burning Steppes
         [18202930] = { itemId = 0, name = "Mysterious Orb" },
@@ -1071,6 +1112,7 @@ AscensionPOI_Data = {
         [08304520] = { itemId = 0, name = "Aroy Grappling Hook Rope Holder" },
         [10604380] = { itemId = 0, name = "Aroy Grappling Hook Rope Holder" },
         [10904530] = { itemId = 0, name = "Mysterious Cache" },
+        [35005730] = { itemId = 1013606, name = "Mystic Scroll: Grateful Prayer" },
     },
     ["SearingGorge"] = { -- Searing Gorge
         [64006090] = { itemId = 1379542, name = "Dorius\' Shield" },
@@ -1162,6 +1204,9 @@ AscensionPOI_Data = {
         [83503030] = { itemId = 0, name = "Mysterious Cache" },
         [86503390] = { itemId = 410023, name = "Scarlet Tome" },
         [87705120] = { itemId = 0, name = "Nightweb Spider Egg" },
+        [83333342] = { itemId = 200072, name = "Mystic Scroll: Divine Star" },
+        [86783409] = { itemId = 200784, name = "Mystic Scroll: Holy Word: Chastise" },
+        [70466385] = { itemId = 201592, name = "Mystic Scroll: Lightburst" },
     },
     ["Silverpine"] = { -- Silverpine Forest
         [37001840] = { itemId = 0, name = "Meat Wagon Small Claw" },
@@ -1190,6 +1235,12 @@ AscensionPOI_Data = {
         [71800660] = { itemId = 0, name = "Poison Vial" },
         [73203750] = { itemId = 0, name = "Post-Explosion Magic Debris" },
         [73201610] = { itemId = 0, name = "Stolen Lordaeron Jewel" },
+        [45768574] = { itemId = 201525, name = "Mystic Scroll: Overflowing Light" },
+        [62556231] = { itemId = 201533, name = "Mystic Scroll: Shadow Reserves" },
+        [49255973] = { itemId = 201565, name = "Mystic Scroll: Light and Shadow" },
+        [42587268] = { itemId = 201580, name = "Mystic Scroll: Psychic Infusion" },
+        [60586609] = { itemId = 201581, name = "Mystic Scroll: Shattered Restoration" },
+        [50123166] = { itemId = 201591, name = "Mystic Scroll: Promise of Renewal" },
     },
     ["EasternPlaguelands"] = { -- Eastern Plaguelands
         [22803160] = { itemId = 0, name = "Mysterious Curse" },
@@ -1254,6 +1305,13 @@ AscensionPOI_Data = {
         [58605500] = { itemId = 0, name = "Crusader\'s Mace" },
         [06203130] = { itemId = 0, name = "Terrifying Exsanguinated Corpse" },
         [28401160] = { itemId = 0, name = "Flower of Regret" },
+        [72507008] = { itemId = 1300145, name = "Mystic Scroll: Colossus Smash" },
+        [12833003] = { itemId = 200606, name = "Mystic Scroll: Holy Ascension" },
+        [76555172] = { itemId = 200748, name = "Mystic Scroll: Prayer Circle" },
+        [75255300] = { itemId = 200860, name = "Mystic Scroll: Words of Healing" },
+        [42563825] = { itemId = 200860, name = "Mystic Scroll: Words of Healing" },
+        [75407500] = { itemId = 200911, name = "Mystic Scroll: Purity of Light" },
+        [73503952] = { itemId = 554401, name = "Mystic Scroll: Psychic Influence" },
     },
     ["Teldrassil"] = { -- Teldrassil
         [67505710] = { itemId = 0, name = "Underbed Glint" },
@@ -1321,6 +1379,8 @@ AscensionPOI_Data = {
         [41106210] = { itemId = 0, name = "Disturbed Dirt" },
         [41007170] = { itemId = 0, name = "Teldrassil Skewer" },
         [43607650] = { itemId = 1388164, name = "Grove Flowers" },
+        [38508679] = { itemId = 201249, name = "Mystic Scroll: Impending Doom" },
+        [55442609] = { itemId = 201580, name = "Mystic Scroll: Psychic Infusion" },
     },
     ["Mulgore"] = { -- Mulgore
         [43508070] = { itemId = 1388524, name = "Large Kodo Bone" },
@@ -1457,6 +1517,7 @@ AscensionPOI_Data = {
         [90805530] = { itemId = 0, name = "Mysterious Bear Statue" },
         [53904600] = { itemId = 0, name = "Mysterious Arcane Sigil" },
         [42904320] = { itemId = 0, name = "Mysterious Statue" },
+        [60006200] = { itemId = 201538, name = "Mystic Scroll: Intense Focus" },
     },
     ["Feralas"] = { -- Feralas
         [26006870] = { itemId = 0, name = "Dreaded Exsanguinated Corpse" },
@@ -1524,6 +1585,8 @@ AscensionPOI_Data = {
         [84203700] = { itemId = 1388151, name = "Abandoned Supplies" },
         [88603880] = { itemId = 0, name = "Accumulated Moonlight" },
         [89504670] = { itemId = 0, name = "Mysterious Spirit" },
+        [89534658] = { itemId = 2000070, name = "Mystic Scroll: Angelic Feather" },
+        [53277534] = { itemId = 201553, name = "Mystic Scroll: Radiant Star" },
     },
     ["Felwood"] = { -- Felwood
         [57102680] = { itemId = 0, name = "Mysterious Grizzly Statue" },
@@ -1674,6 +1737,9 @@ AscensionPOI_Data = {
         [46701330] = { itemId = 0, name = "Overlook Cache" },
         [28100670] = { itemId = 1388169, name = "Offering to Azshara" },
         [26600910] = { itemId = 0, name = "Mysterious Orb" },
+        [54827979] = { itemId = 200099, name = "Mystic Scroll: Void Shift" },
+        [30000992] = { itemId = 200111, name = "Mystic Scroll: Halo" },
+        [48450771] = { itemId = 200586, name = "Mystic Scroll: Void Herald: Whispers of the Old Gods" },
     },
     ["StonetalonMountains"] = { -- Stonetalon Mountains
         [34106490] = { itemId = 0, name = "Mysterious Burning Corpse" },
@@ -1711,6 +1777,8 @@ AscensionPOI_Data = {
         [54404450] = { itemId = 0, name = "Wyvern Cache" },
         [40400640] = { itemId = 0, name = "Unstable Manastorm Portal" },
         [33106510] = { itemId = 0, name = "Still Smoldering Stump" },
+        [71735996] = { itemId = 1013903, name = "Mystic Scroll: Light at the End of the Tunnel" },
+        [41191718] = { itemId = 201185, name = "Mystic Scroll: Energizing Prayer" },
     },
     ["Tanaris"] = { -- Tanaris
         [65105200] = { itemId = 0, name = "Mysterious Sunlight Well" },
@@ -1777,6 +1845,7 @@ AscensionPOI_Data = {
         [30707830] = { itemId = 1379600, name = "Dunecaller\'s Spire" },
         [50308480] = { itemId = 0, name = "Buried Artifact" },
         [74604940] = { itemId = 0, name = "Unstable Manastorm Portal" },
+        [52002811] = { itemId = 200999, name = "Mystic Scroll: Power of Generosity" },
     },
     ["UngoroCrater"] = { -- Un'Goro Crater
         [48200290] = { itemId = 0, name = "Mysterious Orb" },
@@ -1927,6 +1996,8 @@ AscensionPOI_Data = {
         [62604780] = { itemId = 0, name = "Blood Stain" },
         [62604770] = { itemId = 0, name = "Poison Dart" },
         [53105670] = { itemId = 0, name = "Spectral Pick" },
+        [68297448] = { itemId = 1300143, name = "Mystic Scroll: Leap of Faith" },
+        [50554326] = { itemId = 201249, name = "Mystic Scroll: Impending Doom" },
     },
     ["Silithus"] = { -- Silithus
         [31309590] = { itemId = 0, name = "Recruitment Badge" },
@@ -1946,5 +2017,9 @@ AscensionPOI_Data = {
         [70901230] = { itemId = 0, name = "Discarded Belongings" },
         [74401170] = { itemId = 0, name = "Twilight Storage Barrel" },
         [22809300] = { itemId = 0, name = "Old God\'s Tablet" },
+        [60455243] = { itemId = 200195, name = "Mystic Scroll: Void Herald: Grasp of Darkness" },
+        [26603440] = { itemId = 200586, name = "Mystic Scroll: Void Herald: Whispers of the Old Gods" },
+        [73051481] = { itemId = 200776, name = "Mystic Scroll: Twillight Paragon" },
+        [22739263] = { itemId = 200895, name = "Mystic Scroll: Void Herald: Madness of the Old Gods" },
     },
 }
