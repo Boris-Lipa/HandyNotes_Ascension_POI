@@ -2,6 +2,8 @@
 
 A HandyNotes plugin for World of Warcraft 3.3.5 (WotLK) that Worldforged RPG Items on the map. Works for Ascension WoW servers as they have the items.
 
+<img width="1992" height="1112" alt="image" src="https://github.com/user-attachments/assets/65740db8-048a-40c0-902c-893c8774cf79" />
+
 
 ## Features
 
@@ -17,3 +19,4 @@ A HandyNotes plugin for World of Warcraft 3.3.5 (WotLK) that Worldforged RPG Ite
 1. Make sure you have HandyNotes addon installed
 2. Copy the `HandyNotes_Ascension_POI` folder to your `World of Warcraft\Interface\AddOns\` directory
 3. Restart World of Warcraft or reload your UI with `/reload`
+
