@@ -1,13 +1,15 @@
 # HandyNotes: Ascension POI
 
-A HandyNotes plugin for World of Warcraft 3.3.5 (WotLK) that displays points of interest on the map for Ascension WoW.
+A HandyNotes plugin for World of Warcraft 3.3.5 (WotLK) that Worldforged RPG Items on the map. Works for Ascension WoW servers as they have the items.
 
-This is meant to work for Bronzebeard!
+I'm waiting on some more data dumps that will enable me to show all of the item tooltip for each item, but for now it will show no tooltip and a generic icon for items that don't have an Item ID in the data dump.
 
 ## Features
 
-- Shows ME's and lootable Worldforged items on the map
-- Displays item names and coordinates in tooltips
+- Shows lootable Worldforged items on the map
+- Shows the item tooltip / icon for items where I have an Item ID
+- Will scale the item in the tooltip to player level (if supported, does not work on Elune for now, might work on Bronzebeard)
+
 
 ## Installation
 
