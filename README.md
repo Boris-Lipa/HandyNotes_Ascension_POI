@@ -17,6 +17,8 @@ A HandyNotes plugin for World of Warcraft 3.3.5 (WotLK) that Worldforged RPG Ite
 ## Installation
 
 1. Make sure you have HandyNotes addon installed
-2. Copy the `HandyNotes_Ascension_POI` folder to your `World of Warcraft\Interface\AddOns\` directory
-3. Restart World of Warcraft or reload your UI with `/reload`
+2. Extract the zip file and rename it to `HandyNotes_Ascension_POI`
+3. Copy the `HandyNotes_Ascension_POI` folder to your `World of Warcraft\Interface\AddOns\` directory
+4. Restart World of Warcraft
 
+** IMPORTANT - MAKE SURE YOU RENAME THE FOLDER FROM `HandyNotes_Ascension_POI-master` to `HandyNotes_Ascension_POI` OR IT WILL NOT WORK**
