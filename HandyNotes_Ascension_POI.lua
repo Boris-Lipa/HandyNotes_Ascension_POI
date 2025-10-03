@@ -12,6 +12,8 @@ local defaults = {
         icon_alpha = 1.0,
         show_coords = true,
         show_on_minimap = true,
+        item_level_scaling = true,
+        max_item_level = 60,
     }
 }
 
@@ -101,10 +103,23 @@ function APOIHandler:OnEnter(mapFile, coord)
             -- Add separator line before item info
             tooltip:AddLine(" ")
             
-            -- Use the itemId from the data entry
+            -- Use the itemId from the data entry with level scaling
             local tempTooltip = CreateFrame("GameTooltip", "TempItemTooltip", UIParent, "GameTooltipTemplate")
             tempTooltip:SetOwner(UIParent, "ANCHOR_NONE")
-            tempTooltip:SetHyperlink("item:" .. itemId)
+            
+            if db.item_level_scaling then
+                -- WoW 3.3.5 might not support item level scaling properly
+                -- But we can try this format: item:id:enchant:gem1:gem2:gem3:gem4:suffix:uniqueid
+                local playerLevel = UnitLevel("player") or db.max_item_level
+                local scaledLevel = math.min(playerLevel, db.max_item_level)
+                
+                -- Try format that worked in some 3.3.5 builds
+                local scaledItemLink = string.format("item:%d::::::::%d", itemId, scaledLevel)
+                tempTooltip:SetHyperlink(scaledItemLink)
+            else
+                -- Show item at max level (no scaling)
+                tempTooltip:SetHyperlink("item:" .. itemId)
+            end
             
             -- Copy the item tooltip lines to our main tooltip
             for i = 1, tempTooltip:NumLines() do
@@ -187,6 +202,21 @@ local options = {
                     desc = "Show POI icons on the minimap",
                     arg = "show_on_minimap",
                     order = 40,
+                },
+                item_level_scaling = {
+                    type = "toggle",
+                    name = "Scale Item Levels",
+                    desc = "Scale item tooltips to player level instead of showing max level",
+                    arg = "item_level_scaling",
+                    order = 50,
+                },
+                max_item_level = {
+                    type = "range",
+                    name = "Max Item Level",
+                    desc = "Maximum level to scale items to",
+                    min = 1, max = 80, step = 1,
+                    arg = "max_item_level",
+                    order = 60,
                 },
             },
         },
