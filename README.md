@@ -1,6 +1,6 @@
 # HandyNotes: Ascension POI
 
-Fork of <a href="https://github.com/ascensionhandynotespoi/HandyNotes_Ascension_POI">HandyNotes_Ascension_POI</a>
+Fork of <a href="https://github.com/ascensionhandynotespoi/HandyNotes_Ascension_POI">HandyNotes_Ascension_POI</a>, added 2 additional features.
 
 ## Features
 
@@ -22,4 +22,5 @@ V2 Features:
 4. Restart World of Warcraft
 
 ** IMPORTANT - MAKE SURE YOU RENAME THE FOLDER FROM `HandyNotes_Ascension_POI-master` to `HandyNotes_Ascension_POI` OR IT WILL NOT WORK**
+
 
